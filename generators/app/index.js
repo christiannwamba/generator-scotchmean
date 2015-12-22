@@ -48,7 +48,7 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copyTpl(
         this.templatePath('_server.js'),
         this.destinationPath('server.js'),
-        this.destinationPath('/views/index.ejs'), {
+        this.destinationPath('views/index.ejs'), {
           name: this.props.name
         }
       );
@@ -66,7 +66,7 @@ module.exports = yeoman.generators.Base.extend({
       // Views
       this.fs.copyTpl(
         this.templatePath('_views/_index.ejs'),
-        this.destinationPath('/views/index.ejs'), {
+        this.destinationPath('views/index.ejs'), {
           name: this.props.name
         }
       );
